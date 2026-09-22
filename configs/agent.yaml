@@ -1,0 +1,13 @@
+agent:
+  max_tool_calls: 8
+  max_retries: 1
+  max_evidence: 8
+  use_langgraph: false
+
+memory:
+  root: data/agent/memory
+  semantic_min_confidence: 0.6
+
+mcp:
+  enabled: true
+  transport: in_process

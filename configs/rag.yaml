@@ -1,0 +1,36 @@
+documents:
+  input_dir: data/rag/documents
+  index_dir: data/rag/index
+
+chunking:
+  max_chars: 800
+  overlap: 100
+  min_chars: 30
+
+embedding:
+  provider: hash
+  dimension: 256
+  model: BAAI/bge-m3
+
+vector_store:
+  provider: memory
+  uri: http://localhost:19530
+  collection: soil_chunks
+
+retrieval:
+  top_k: 10
+  rrf_k: 60
+  weights:
+    bm25: 0.35
+    vector: 0.45
+    graph: 0.20
+  reranker: lexical
+
+generation:
+  max_context_chars: 6000
+  max_new_tokens: 512
+  refusal_threshold: 0.5
+
+speech:
+  asr_endpoint: http://localhost:8001/asr
+  tts_endpoint: http://localhost:8002/tts

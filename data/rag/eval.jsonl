@@ -1,0 +1,3 @@
+{"id":"eval-process-1","query":"制作水土保持方案前需要准备哪些资料？","relevant_document_ids":["soil_conservation_process"],"required_terms":["项目位置","建设内容","用地范围"]}
+{"id":"eval-process-2","query":"水土保持方案审查前要经过什么流程？","relevant_document_ids":["soil_conservation_process"],"required_terms":["内部校核","提交主管部门审查"]}
+{"id":"eval-monitor-1","query":"水土保持监测主要监测哪些内容？","relevant_document_ids":["soil_conservation_monitoring"],"required_terms":["扰动土地范围","防治措施","防治成效"]}
